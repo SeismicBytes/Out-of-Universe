@@ -121,7 +121,7 @@ def process_files(data_df, universe_df, revenue_ranges):
 
 # Streamlit app
 def main():
-    st.title("Quota Excess Respondent Finder")
+    st.title("PPL: Out of Universe Checker")
 
     # File format instructions
     st.header("File Format Instructions")
@@ -182,7 +182,7 @@ def main():
             st.header("Results")
 
             # Excess Respondents
-            st.subheader("Excess Respondents")
+            st.subheader("Excess Responses")
             if excess_respondents:
                 excess_df = pd.DataFrame(excess_respondents)
                 st.dataframe(excess_df)
